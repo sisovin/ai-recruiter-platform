@@ -1,13 +1,56 @@
 # AI Recruiter Platform
 
-## Description
-This project is an AI-powered recruiter platform that helps recruiters manage candidates and job applications efficiently. It leverages Next.js, Supabase, and Vapi.ai to provide a seamless experience for both recruiters and candidates.
+A platform for AI-powered recruitment that streamlines the hiring process using advanced machine learning and natural language processing techniques.
 
-## Setup Instructions
+## Table of Contents
+
+1. [Overview](#overview)
+2. [Features](#features)
+3. [Technologies Used](#technologies-used)
+4. [Installation](#installation)
+5. [Usage](#usage)
+6. [Contributing](#contributing)
+7. [License](#license)
+
+---
+
+## Overview
+
+The **AI Recruiter Platform** leverages artificial intelligence to enhance the recruitment process. It automates candidate sourcing, screening, and matching to job requirements, providing HR teams with a powerful tool to make data-driven decisions and reduce hiring times.
+
+## Features
+
+- **AI-Powered Candidate Matching**: Matches candidates to job descriptions using machine learning algorithms.
+- **Automated Resume Parsing**: Extracts key details from resumes and organizes them for easy access.
+- **Customizable Job Criteria**: Allows recruiters to set specific job criteria and preferences.
+- **Analytics Dashboard**: Provides insights into recruitment metrics and candidate data.
+- **Integration Support**: Seamlessly integrates with popular HR tools and job boards.
+
+## Technologies Used
+
+This project is built primarily with the following technologies:
+
+- **TypeScript** (97.4%): Core language used for application development.
+- **CSS** (1.9%): Used for styling the user interface.
+- **JavaScript** (0.7%): Supporting scripts and modules.
+
+Additionally, it may include frameworks and libraries such as:
+
+- **React**: For building the user interface.
+- **Node.js**: For backend services.
+- **Express**: For API development.
+- **MongoDB** or **PostgreSQL**: For database management.
+- **TensorFlow** or **PyTorch**: For machine learning models.
+- **Docker**: For containerization and deployment.
+
+## Installation
+
+Follow these steps to set up the platform locally:
+
 1. Clone the repository:
    ```bash
-   git clone https://github.com/githubnext/workspace-blank.git
-   cd workspace-blank
+   git clone https://github.com/sisovin/ai-recruiter-platform.git
+   cd ai-recruiter-platform
    ```
 
 2. Install dependencies:
@@ -15,58 +58,51 @@ This project is an AI-powered recruiter platform that helps recruiters manage ca
    npm install
    ```
 
-3. Set up environment variables:
-   - Create a `.env.local` file in the root directory.
-   - Add the following environment variables:
-     ```
-     NEXT_PUBLIC_SUPABASE_URL=your-supabase-url
-     NEXT_PUBLIC_SUPABASE_ANON_KEY=your-supabase-anon-key
-     VAPI_API_KEY=your-vapi-api-key
-     ```
+3. Configure environment variables:
 
-4. Initialize the Supabase database:
-   - Sign up for a Supabase account at https://supabase.io/
-   - Create a new project and obtain the Supabase URL and anon key.
-   - Run the database migrations (if any).
+   Create a `.env` file in the root directory and provide the necessary configurations (database connection, API keys, etc.).
 
-## Running the Project
-1. Start the development server:
+4. Start the development server:
    ```bash
    npm run dev
    ```
 
-2. Open your browser and navigate to `http://localhost:3000` to see the application in action.
+5. Access the application at [http://localhost:3000](http://localhost:3000).
 
-## Vercel Deployment Instructions
-1. Create a Vercel account at https://vercel.com/
-2. Install the Vercel CLI:
+## Usage
+
+1. **Setting Up Jobs**: Add job descriptions and criteria through the admin dashboard.
+2. **Uploading Resumes**: Upload resumes in bulk or individually for parsing and analysis.
+3. **Reviewing Candidates**: View and manage candidates matched to job requirements.
+4. **Analytics Dashboard**: Monitor recruitment metrics such as average hiring time, candidate quality, and more.
+
+## Contributing
+
+We welcome contributions to the **AI Recruiter Platform**! To contribute:
+
+1. Fork the repository.
+2. Create a feature branch:
    ```bash
-   npm install -g vercel
+   git checkout -b feature-name
    ```
-3. Log in to Vercel:
+3. Commit your changes:
    ```bash
-   vercel login
+   git commit -m "Add feature-name"
    ```
-4. Deploy the project:
+4. Push to your branch:
    ```bash
-   vercel
+   git push origin feature-name
    ```
+5. Open a pull request.
 
-## Monitoring Setup Instructions
-1. Enable Vercel's built-in monitoring for your project.
-2. Configure alerts and notifications as needed.
+Please ensure that your code adheres to the project's coding guidelines and includes appropriate tests.
 
-## API Documentation
-- [API Documentation](docs/api.md)
+## License
 
-## Component Library Documentation
-- [Component Library Documentation](docs/components.md)
+This project is licensed under the [MIT License](LICENSE).
 
-## Vapi Integration Setup Instructions
-1. Sign up for a Vapi account at https://vapi.ai/
-2. Obtain your Vapi API key from the Vapi dashboard.
-3. Add the Vapi API key to your `.env.local` file:
-   ```
-   VAPI_API_KEY=your-vapi-api-key
-   ```
-4. Follow the Vapi documentation to set up webhooks and other necessary configurations.
+---
+
+For more details, visit the [Issues](https://github.com/sisovin/ai-recruiter-platform/issues) or [Pull Requests](https://github.com/sisovin/ai-recruiter-platform/pulls) sections.
+
+---
