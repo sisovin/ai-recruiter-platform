@@ -22,11 +22,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 }
 
 const createInterview = async (req: NextApiRequest, res: NextApiResponse) => {
-  const { date, time, participants } = req.body;
+  const { date, time, participants, candidate_id, job_id } = req.body;
 
   const { data, error } = await supabase
     .from('interviews')
-    .insert([{ date, time, participants }]);
+    .insert([{ date, time, participants, candidate_id, job_id }]);
 
   if (error) {
     return res.status(500).json({ error: error.message });
@@ -48,11 +48,11 @@ const getInterviews = async (req: NextApiRequest, res: NextApiResponse) => {
 };
 
 const updateInterview = async (req: NextApiRequest, res: NextApiResponse) => {
-  const { id, date, time, participants } = req.body;
+  const { id, date, time, participants, candidate_id, job_id } = req.body;
 
   const { data, error } = await supabase
     .from('interviews')
-    .update({ date, time, participants })
+    .update({ date, time, participants, candidate_id, job_id })
     .eq('id', id);
 
   if (error) {

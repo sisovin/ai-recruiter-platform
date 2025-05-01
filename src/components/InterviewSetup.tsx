@@ -25,10 +25,29 @@ const InterviewSetup = () => {
     setStep((prevStep) => prevStep - 1);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     // Validate and submit setup data to the backend
     console.log('Setup Data:', setupData);
+
+    try {
+      const response = await fetch('/api/interviews', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(setupData),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to submit interview setup data');
+      }
+
+      const result = await response.json();
+      console.log('Interview setup data submitted successfully:', result);
+    } catch (error) {
+      console.error('Error submitting interview setup data:', error);
+    }
   };
 
   return (
