@@ -18,6 +18,14 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
         // Process job offer
         console.log('Job offer:', data);
         break;
+      case 'call_initiated':
+        // Process call initiation
+        console.log('Call initiated:', data);
+        break;
+      case 'call_ended':
+        // Process call end
+        console.log('Call ended:', data);
+        break;
       default:
         console.log('Unhandled event:', event);
     }
