@@ -12,3 +12,9 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
     res.status(405).json({ message: 'Method not allowed' });
   }
 }
+
+export const initializeCall = async (callId: string, userId: string) => {
+  // Logic to initialize the call
+  console.log('Initializing call:', { callId, userId });
+  return { message: 'Call initialized' };
+};

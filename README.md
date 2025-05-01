@@ -61,3 +61,12 @@ This project is an AI-powered recruiter platform that helps recruiters manage ca
 
 ## Component Library Documentation
 - [Component Library Documentation](docs/components.md)
+
+## Vapi Integration Setup Instructions
+1. Sign up for a Vapi account at https://vapi.ai/
+2. Obtain your Vapi API key from the Vapi dashboard.
+3. Add the Vapi API key to your `.env.local` file:
+   ```
+   VAPI_API_KEY=your-vapi-api-key
+   ```
+4. Follow the Vapi documentation to set up webhooks and other necessary configurations.
