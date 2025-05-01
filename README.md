@@ -36,3 +36,28 @@ This project is an AI-powered recruiter platform that helps recruiters manage ca
    ```
 
 2. Open your browser and navigate to `http://localhost:3000` to see the application in action.
+
+## Vercel Deployment Instructions
+1. Create a Vercel account at https://vercel.com/
+2. Install the Vercel CLI:
+   ```bash
+   npm install -g vercel
+   ```
+3. Log in to Vercel:
+   ```bash
+   vercel login
+   ```
+4. Deploy the project:
+   ```bash
+   vercel
+   ```
+
+## Monitoring Setup Instructions
+1. Enable Vercel's built-in monitoring for your project.
+2. Configure alerts and notifications as needed.
+
+## API Documentation
+- [API Documentation](docs/api.md)
+
+## Component Library Documentation
+- [Component Library Documentation](docs/components.md)
